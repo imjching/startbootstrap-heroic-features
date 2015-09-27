@@ -39,19 +39,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +64,7 @@
         <header class="jumbotron hero-spacer">
             <h1>A Warm Welcome!</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-            <p><a class="btn btn-primary btn-large">Call to action!</a>
+            <p><a id="call-to-action" class="btn btn-primary btn-large">Call to action!</a>
             </p>
         </header>
 
@@ -91,7 +88,7 @@
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-primary" id="product-1">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -104,7 +101,7 @@
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-primary" id="product-2">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -117,7 +114,7 @@
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-primary" id="product-3">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -130,7 +127,7 @@
                         <h3>Feature Label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                            <a href="#" class="btn btn-primary" id="product-4">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
                         </p>
                     </div>
                 </div>
@@ -153,12 +150,57 @@
     </div>
     <!-- /.container -->
 
+    <!-- GA Tracking here -->
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <script>
+        $(document).ready(function() {
+            $('#call-to-action').click(function(e) {
+                e.preventDefault();
+
+                // GA Event tracking over here for Call to Action
+
+                alert('Call to Action is clicked');
+            });
+
+            $('#product-1').click(function(e) {
+                e.preventDefault();
+
+                // GA Event tracking over here for Product 1
+
+                alert('Product 1 is clicked');
+            });
+
+            $('#product-2').click(function(e) {
+                e.preventDefault();
+
+                // GA Event tracking over here for Product 2
+
+                alert('Product 2 is clicked');
+            });
+
+            $('#product-3').click(function(e) {
+                e.preventDefault();
+
+                // GA Event tracking over here for Product 3
+
+                alert('Product 3 is clicked');
+            });
+
+            $('#product-4').click(function(e) {
+                e.preventDefault();
+
+                // GA Event tracking over here for Product 4
+
+                alert('Product 4 is clicked');
+            });
+        });
+    </script>
 </body>
 
 </html>
